@@ -1,6 +1,6 @@
 # Binance.js - Binance API Wrapper
 
-![https://travis-ci.org/evanshortiss/binance.js](https://travis-ci.org/evanshortiss/binance.js.svg) [![npm version](https://badge.fury.io/js/binance.js.svg)](https://badge.fury.io/js/binance.js.svg) [![https://coveralls.io/repos/github/evanshortiss/binance.js](https://coveralls.io/repos/github/evanshortiss/binance.js/badge.svg?branch=master)](https://coveralls.io/github/evanshortiss/binance.js?branch=master)
+![https://travis-ci.org/evanshortiss/binance.js](https://travis-ci.org/evanshortiss/binance.js.svg) [![npm version](https://badge.fury.io/js/%40evanshortiss%2Fbinance.js.svg)](https://badge.fury.io/js/%40evanshortiss%2Fbinance.js.svg) [![https://coveralls.io/repos/github/evanshortiss/binance.js](https://coveralls.io/repos/github/evanshortiss/binance.js/badge.svg?branch=master)](https://coveralls.io/github/evanshortiss/binance.js?branch=master)
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
 Node.js and Browser friendly wrapper for the Binance API, written using
@@ -134,7 +134,8 @@ thrown, so be sure to use `.catch()` function on Promises and `try/catch` if
 using Async/Await.
 
 All of the following functions and the returned data types are detailed in the
-Binance API docs. For details of the types shown below visit the `src/models`
+Binance API docs. For details of the types shown below visit the
+[src/models](github.com/evanshortiss/binance.js/blob/master/src/models.ts)
 folder in this repo and read the Binance API docs.
 
 Public methods are detailed below. Optional parameters are denoted using the `?`
