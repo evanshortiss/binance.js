@@ -1,0 +1,96 @@
+{
+  "name": "binance",
+  "version": "0.1.0",
+  "description": "No nonsense wrapper for the Binance API, written in TypeScript",
+  "main": "binance.js",
+  "typings": "binance.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "tsc && jest",
+    "test-debug": "DEBUG=binance.js:* npm test",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "prepublish": "tsc",
+    "browserify": "tsc && browserify -e binance.js -o dist/binance.js -s Binance"
+  },
+  "browser": {
+    "crypto": "crypto-browserify"
+  },
+  "keywords": [
+    "binance",
+    "binance.js",
+    "typescript",
+    "bitcoin",
+    "blockchain",
+    "api",
+    "wrapper",
+    "rest",
+    "ts",
+    "browser",
+    "web browser",
+    "web",
+    "client"
+  ],
+  "author": "Evan Shortiss <evanshortiss@gmail.com> (http://evanshortiss.com/)",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "mapCoverage": true,
+    "cache": false,
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "./src/errors.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "~8.5.2",
+    "axios": "~0.17.1",
+    "crypto-browserify": "~3.12.0",
+    "debug": "~3.1.0",
+    "url-join": "~2.0.2"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/jest": "~21.1.9",
+    "@types/nock": "~9.1.0",
+    "@types/url-join": "~0.8.2",
+    "browserify": "~14.5.0",
+    "coveralls": "~3.0.0",
+    "dotenv": "~4.0.0",
+    "jest": "~22.0.4",
+    "nock": "~9.1.5",
+    "ts-jest": "~22.0.0",
+    "typescript": "~2.6.2"
+  },
+  "engines": {
+    "node": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanshortiss/binance.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evanshortiss/binance.js/issues"
+  },
+  "homepage": "https://github.com/evanshortiss/binance.js#readme"
+}
