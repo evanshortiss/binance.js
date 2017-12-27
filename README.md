@@ -135,7 +135,7 @@ using Async/Await.
 
 All of the following functions and the returned data types are detailed in the
 Binance API docs. For details of the types shown below visit the
-[src/models](github.com/evanshortiss/binance.js/blob/master/src/models.ts)
+[src/models](https://github.com/evanshortiss/binance.js/blob/master/src/models.ts)
 folder in this repo and read the Binance API docs.
 
 Public methods are detailed below. Optional parameters are denoted using the `?`
