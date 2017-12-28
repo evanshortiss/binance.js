@@ -200,7 +200,7 @@ export class RestClient {
    * Returns the latest prices for all symbols.
    */
   async getAllPrices () {
-    const ret = await this.http(ENDPOINTS.ALLORDERS)
+    const ret = await this.http(ENDPOINTS.ALLPRICES)
 
     return ret.data as Models.RestApiResponses.Ticker[]
   }

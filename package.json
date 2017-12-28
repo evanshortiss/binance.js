@@ -1,6 +1,6 @@
 {
   "name": "@evanshortiss/binance.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "No nonsense wrapper for the Binance API, written in TypeScript",
   "main": "binance.js",
   "typings": "binance.d.ts",

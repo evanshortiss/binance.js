@@ -168,7 +168,7 @@ where data is changed from the Binance format to another format for ease of use.
 
 Data will look similar to this:
 
-```
+```js
 {
   lastUpdateId: number
   bids: [
