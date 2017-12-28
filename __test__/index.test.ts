@@ -216,7 +216,7 @@ describe('#http()', () => {
 describe('#getAllPrices()', () => {
   it('should return BTC balance for the account', async () => {
     api
-      .get('/v3/allOrders')
+      .get('/v1/ticker/allPrices')
       .query(true)
       .reply(200, require('../fixtures/all-prices.json'))
 
