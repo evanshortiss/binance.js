@@ -24,7 +24,7 @@ noted.
 ### Install
 
 ```
-npm install binance.js --save
+npm install @evanshortiss/binance.js --save
 ```
 
 ### Example
@@ -35,7 +35,7 @@ too.
 ```js
 'use strict'
 
-const Binance = require('binance.js')
+const Binance = require('@evanshortiss/binance.js')
 
 const client = new Binance.RestClient({
   apikey: 'YOUR KEY GOES HERE',
@@ -78,7 +78,7 @@ but didn't provide the `apikey` and/or `apisecret` when creating a
 If the Binance API returns a 4xx status code then this error is thrown.
 
 ```js
-const Binance = require('binance.js')
+const Binance = require('@evanshortiss/binance.js')
 
 const client = new Binance.RestClient()
 
